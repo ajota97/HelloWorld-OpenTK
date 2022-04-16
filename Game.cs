@@ -28,7 +28,8 @@ namespace HelloWorld
         }
         protected override void OnLoad()
         {
-            GL.ClearColor(new Color4(0.3f,0.4f,0.5f,1f));
+
+            
 
             float[] vertices = new float[]
                 { 
@@ -98,6 +99,7 @@ namespace HelloWorld
 
 
             base.OnLoad();
+            GL.Rotate(20, 1, 1, 0);
         }
 
         protected override void OnUnload()
